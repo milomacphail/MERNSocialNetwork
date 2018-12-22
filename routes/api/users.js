@@ -15,7 +15,7 @@ const User = require('../../models/User');
 
 router.get('/test', (req, res) => res.json({msg: "Users works" }));
 
-//@route GET api/users/test
+//@route POST api/users/test
 //@desc  Test users route
 //access Public
 router.post('/register', (req, res) => {
@@ -48,7 +48,8 @@ router.post('/register', (req, res) => {
                 bcrypt.hash(newUser.password, salt, (err, hash) =>{
                     if(err) throw err;
                     newUser.password = hash;
-                    newUser.save()
+                    newUser
+                    .save()
                     .then(user => res.json(user))
                     .catch(err => console.log(err))
                 })
