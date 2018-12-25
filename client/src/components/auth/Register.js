@@ -18,7 +18,7 @@ class Register extends Component {
     }
     
     onChange(e){
-            this.setState({[e.target.name]: e.target.value});
+            this.setState({ [e.target.name]: e.target.value});
     }
     
     onSubmit(e){
@@ -31,7 +31,8 @@ class Register extends Component {
                 password2: this.state.password2
             };
             
-            axios.post('/api/users/register', newUser) 
+            axios
+            .post('/api/users/register', newUser)
             .then(res => console.log(res.data))
             .catch(err => this.setState({errors: err.response.data}));
     }
