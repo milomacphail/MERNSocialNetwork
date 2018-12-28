@@ -17,12 +17,12 @@ import './App.css';
 
 //check for token
 if (localStorage.jwtToken) {
-    //set auth Token header
-     setAuthToken(localStorage.jwtToken);
-    //Decode token and get user login and info
-    const decoded = jwt_decode(localStorage.jwtToken);
-    //call SET_CURRENT_USER
-    store.dispatch(setCurrentUser(decoded));
+  // Set auth token header auth
+  setAuthToken(localStorage.jwtToken);
+  // Decode token and get user info and expiration
+  const decoded = jwt_decode(localStorage.jwtToken);
+  // Set user and isAuthenticated
+  store.dispatch(setCurrentUser(decoded));
 }
 
 //check for expired token
