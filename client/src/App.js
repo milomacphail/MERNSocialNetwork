@@ -16,6 +16,7 @@ import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Dashboard from './components/dashboard/Dashboard';
+import CreateProfile from './components/create-profile/CreateProfile';
 
 import { createStore, applyMiddleware } from 'redux';
 
@@ -55,6 +56,7 @@ class App extends Component {
         <Switch>
           <PrivateRoute exact path="/dashboard" component={ Dashboard } />
         </Switch>
+          <Route exact path="/create-profile" component={ CreateProfile } />
       </div>
       <Footer />
       </div>
