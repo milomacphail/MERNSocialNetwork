@@ -208,7 +208,9 @@ class CreateProfile extends Component {
                                 info="Talk about yourself, you show-off."
                                 />
                                 <div className="mb-3">
-                                    <button onClick ={() => {
+                                    <button
+                                    type= "button"
+                                    onClick ={() => {
                                         this.setState(prevState => ({displaySocialInputs: !prevState.displaySocialInputs }))
                                     }} className="btn btn-light"> 
                                     Add Social Links
