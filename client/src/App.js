@@ -17,6 +17,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/create-profile/CreateProfile';
+import EditProfile from './components/edit-profile/EditProfile';
 
 import { createStore, applyMiddleware } from 'redux';
 
@@ -55,6 +56,7 @@ class App extends Component {
         <Route exact path="/login" component={ Login } />
         <Route exact path="/dashboard" component={ Dashboard } />
         <Route exact path="/create-profile" component={ CreateProfile } />
+        <Route exact path="/edit-profile" component={ EditProfile } />
       </div>
       <Footer />
       </div>
