@@ -23,6 +23,7 @@ import AddEducation from './components/add-credentials/AddEducation';
 import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
 import notFound from './components/not-found/notFound';
+import Posts from './components/posts/Posts';
 
 import { createStore, applyMiddleware } from 'redux';
 
@@ -67,6 +68,7 @@ class App extends Component {
         <Route exact path="/add-education" component={ AddEducation } />
         <Route exact path="/profile/:handle" component={ Profile } />
         <Route exact path="/not-found" component={ notFound } />
+        <Route exact path="/feed" component={ Posts } />
       </div>
       <Footer />
       </div>
