@@ -73,7 +73,6 @@ class CreateProfile extends Component {
                 linkedin: profile.linkedin,
                 youtube: profile.youtube,
                 instagram: profile.instagram
-                
             });
             
         }
