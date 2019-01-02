@@ -24,6 +24,7 @@ import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
 import notFound from './components/not-found/notFound';
 import Posts from './components/posts/Posts';
+import Post from './components/post/Post';
 
 import { createStore, applyMiddleware } from 'redux';
 
@@ -69,6 +70,7 @@ class App extends Component {
         <Route exact path="/profile/:handle" component={ Profile } />
         <Route exact path="/not-found" component={ notFound } />
         <Route exact path="/feed" component={ Posts } />
+        <Route exact path="/post/:id" compotent={ Post } />
       </div>
       <Footer />
       </div>
