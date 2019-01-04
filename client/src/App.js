@@ -26,8 +26,6 @@ import notFound from './components/not-found/notFound';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 
-import { createStore, applyMiddleware } from 'redux';
-
 import './App.css';
 
 // Check for token
