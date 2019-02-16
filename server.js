@@ -19,8 +19,12 @@ const db = require('./config/keys').mongoURI;
 
 //Connect to MongoDB
 
+<<<<<<< HEAD
 mongoose
 .connect(db)
+=======
+mongoose.connect(db)
+>>>>>>> c2ddcac293ba4a22083a8e97f56c120dbee5f2af
 .then(()=>console.log("Connected to MongoDB"))
 .catch(err => console.log(err));
 
@@ -36,7 +40,10 @@ app.use('/api/users', users);
 app.use('/api/profile', profile);
 app.use('/api/posts', posts);
 
+<<<<<<< HEAD
 //port
+=======
+>>>>>>> c2ddcac293ba4a22083a8e97f56c120dbee5f2af
 const port =  process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`)); 
