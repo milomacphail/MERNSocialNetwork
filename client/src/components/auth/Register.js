@@ -110,7 +110,6 @@ Register.propTypes = {
   errors: PropTypes.object.isRequired
 };
 
-<<<<<<< HEAD
 const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors
@@ -120,11 +119,3 @@ export default connect(
   mapStateToProps,
   { registerUser }
 )(withRouter(Register));
-=======
-const mapStatetoProps = (state) => ({
- auth: state.auth,
- errors: state.errors
-}); 
-
-export default connect(mapStatetoProps, { registerUser })(withRouter(Register));
->>>>>>> c2ddcac293ba4a22083a8e97f56c120dbee5f2af

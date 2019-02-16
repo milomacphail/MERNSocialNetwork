@@ -8,10 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "server": "nodemon server.js",
-=======
-    "start": "node server.js",
-    "server": "PORT=8082 nodemon server.js",
->>>>>>> c2ddcac293ba4a22083a8e97f56c120dbee5f2af
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
