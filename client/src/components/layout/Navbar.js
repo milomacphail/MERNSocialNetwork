@@ -21,6 +21,8 @@ class Navbar extends Component {
                   <Link className="nav-link" to="/feed">
                   Post Feed
                   </Link>
+              </li>
+              <li>
                   <Link className="nav-link" to="/dashboard">
                   Dashboard
                   </Link>
@@ -67,7 +69,7 @@ class Navbar extends Component {
                         </Link>
                       </li>
                     </ul>
-                    if {isAuthenticated ? authLinks : guestLinks }
+                    {isAuthenticated ? authLinks : guestLinks }
                   </div>
                 </div>
             </nav>
